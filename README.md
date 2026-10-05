@@ -1,0 +1,1 @@
+base url adalah laragon/www
