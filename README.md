@@ -1,1 +1,1 @@
-base url adalah laragon/www
+base url adalah laragon/www atau xampp/htdocs/
