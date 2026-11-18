@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Mahasiswa</title>
+</head>
+<body>
+    <main>
+        <h1>Tambah Data Mahasiswa</h1>
+        <form id="form-tambah-mahasiswa" enctype="multipart/form-data">
+            <div>
+                <label for="nim">NIM</label>
+                <input id="nim" name="nim" type="text" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
+            </div>
+            <div>
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" required>
+            </div>
+            <div>
+                <label for="prodi">Program Studi</label>
+                <input id="prodi" name="prodi" type="text" required>
+            </div>
+            <div>
+                <label for="foto">Foto (JPG/PNG, maksimal 2 MB)</label>
+                <input id="foto" name="foto" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+            </div>
+            <button type="submit">Simpan</button>
+            <a href="dashboard.html">Kembali ke Dashboard</a>
+            <a href="dashboard.html">Kembali ke Dashboard</a>
+        </form>
+        <p id="pesan-form" role="status" aria-live="polite"></p>
+    </main>
+    <script src="form_tambah.js"></script>
+</body>
+</html>

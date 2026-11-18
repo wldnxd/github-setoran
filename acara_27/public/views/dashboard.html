@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main>
+        <h1>Dashboard</h1>
+        <button id="logout" type="button">Logout</button>
+        <button id="tambah-mahasiswa" type="button">Tambah Mahasiswa</button>
+        <p id="info-akses" role="status"></p>
+        <section aria-labelledby="ringkasan-title">
+            <h2 id="ringkasan-title">Ringkasan Data</h2>
+            <p>Total mahasiswa: <strong id="total-mahasiswa">Memuat...</strong></p>
+        </section>
+        <section aria-labelledby="data-mahasiswa-title">
+            <h2 id="data-mahasiswa-title">Seluruh Data Mahasiswa</h2>
+            <p id="pesan-data" role="status" aria-live="polite"></p>
+            <table id="tabel-mahasiswa">
+                <thead>
+                    <tr><th>NIM</th><th>Nama</th><th>Program Studi</th><th>Aksi</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="4">Memuat data...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>

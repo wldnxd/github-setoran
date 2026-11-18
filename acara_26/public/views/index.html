@@ -1,0 +1,22 @@
+<div id="aksi-admin">
+ <button id="tambah-mahasiswa" type="button">Tambah</button>
+</div>
+<form id="form-mahasiswa" enctype="multipart/form-data" hidden>
+ <input id="mahasiswa-id" name="id" type="hidden">
+ <label for="nim">NIM</label>
+ <input id="nim" name="nim" type="text" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
+ <label for="nama">Nama</label>
+ <input id="nama" name="nama" type="text" required>
+ <label for="prodi">Program Studi</label>
+ <input id="prodi" name="prodi" type="text" required>
+ <label for="foto">Foto (JPG/PNG, maksimal 2 MB)</label>
+ <input id="foto" name="foto" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+ <button id="simpan-mahasiswa" type="submit">Simpan</button>
+ <button id="batal-mahasiswa" type="button">Batal</button>
+</form>
+<p id="pesan-form" role="status" aria-live="polite"></p>
+<table id="tabel-mahasiswa">
+ <thead><tr><th>NIM</th><th>Nama</th><th>Program Studi</th><th>Aksi</th></tr></thead>
+ <tbody></tbody>
+</table>
+<script src="app.js"></script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data Mahasiswa</title>
+</head>
+<body>
+    <main>
+        <h1>Edit Data Mahasiswa</h1>
+        <form id="form-edit-mahasiswa" enctype="multipart/form-data">
+            <div>
+                <label for="nim">NIM</label>
+                <input id="nim" name="nim" type="text" minlength="9" maxlength="9" pattern="[0-9]{9}" required>
+            </div>
+            <div>
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" required>
+            </div>
+            <div>
+                <label for="prodi">Program Studi</label>
+                <input id="prodi" name="prodi" type="text" required>
+            </div>
+            <div id="foto-saat-ini-wrap" hidden>
+                <p>Foto saat ini:</p>
+                <img id="foto-saat-ini" alt="Foto mahasiswa saat ini" width="160">
+            </div>
+            <div>
+                <label for="foto">Ganti Foto (JPG/PNG, maksimal 2 MB)</label>
+                <input id="foto" name="foto" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+            </div>
+            <button id="simpan-perubahan" type="submit" disabled>Simpan Perubahan</button>
+            <a href="dashboard.html">Kembali ke Dashboard</a>
+        </form>
+        <p id="pesan-form" role="status" aria-live="polite"></p>
+    </main>
+    <script src="form_edit.js"></script>
+</body>
+</html>
